@@ -3,14 +3,18 @@
 }
 
 body {
-    background-color: #333;
+    background-color: #220901;
     color: rgb(235, 235, 235);
     transition: all 2s;
+
+    font-family: 'Nanum Myeongjo', serif;
+    margin: 30px;
 }
 
 body.switch {
-    background-color: rgb(235, 235, 235);
-    color: #333;
+    background: #FFF7C2;
+    color: #FF73B3;
+    font-family: 'Berkshire Swash', cursive;
 }
 
 #container {
@@ -27,23 +31,211 @@ header {
     margin: 0 auto 2em auto;
 }
 
+h1 {
+    font-size: 48px;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+.showing {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
 #banner {
     position: relative;
     display: flex;
     width: 1100px;
     height: 250px;
     margin: auto;
-    background-color: rgb(235, 235, 235);
-    color: #333;
+    background: linear-gradient(98.71deg, #230D01 0%, #913206 33.96%, #A75D07 68.5%, #A56E09 90.46%, #757657 109.68%);
+    color: white;
     overflow: hidden;
     display: grid;
 	place-items: center;
 }
 
+
+#leaf-animation {
+    position: absolute ;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#leaf-animation div {
+    position: absolute;
+    display: block;
+}
+
+/* Code Credit: Poorani K from Sololearn */
+#leaf1, #leaf2, #leaf3, #leaf4, #leaf5, #leaf6, #leaf7 {
+    animation: fall 15s linear infinite ;
+}
+
+#leaf1 {
+    left: 10%;
+    animation-delay: -2s;
+}
+
+#leaf2 {
+    left: 45%;
+    animation-delay: -5s;
+}
+
+#leaf3 {
+    left: 75%;
+    animation-delay: -1s;
+}
+
+#leaf4 {
+    left: 85%;
+    animation-delay: -8s;
+}
+
+#leaf5 {
+    left: -2%;
+    animation-delay: -4s;
+}
+
+#leaf6 {
+    left: 25%;
+    animation-delay: -6s;
+}
+
+#leaf7 {
+    left: 50%;
+    animation-delay: -10s;
+}
+
+
+@keyframes fall{
+    0%{
+        opacity:1;
+        top: -10%;
+        transform:rotate(0deg);
+    }
+    20%{
+        opacity:0.8;
+        transform:rotate(45deg);
+    }
+    40%{
+
+        transform:(90deg);
+    }
+    60%{
+        
+       transform:rotate(145deg); 
+    }
+    80%{
+    
+        transform:rotate(180deg);
+    }
+    100%{
+        opacity:0.5;
+        top:120%;
+        transform:(240deg);
+    }
+}
+
+#flower-animation {
+    position: absolute ;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#flower-animation div {
+    position: absolute;
+    display: block;
+}
+
+#flower1, #flower2, #flower3, #flower4, #flower5, #flower6, #flower7 {
+    animation: fade 2s infinite alternate;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+}
+
+#flower1 {
+    left: -5%;
+    top: 50%;
+}
+
+#flower2 {
+    left: 45%;
+    top: -20%;
+}
+
+#flower3 {
+    left: 92%;
+    top: -15%;
+}
+
+#flower4 {
+    left: 88%;
+    top: 40%;
+}
+
+#flower5 {
+    left: 35%;
+    top: 70%;
+}
+
+#flower6 {
+    left: 0;
+    top: -10%;
+}
+
+#flower7 {
+    left: 67%;
+    top: -10%;
+}
+
+  
+
 #banner.switch {
-    background-color: #333;
-    color: rgb(235, 235, 235);
+    background: linear-gradient(96.33deg, #FFED83 0%, #F8B581 30.74%, #FFC2AD 43.04%, #AFE8F9 65.74%, #DBE5B1 79.01%, #F1C7FF 97.31%);
+    border-radius: 30px;
+    color: #B654E4;
     transition: all 2s;
+}
+
+#banner h3 {
+    font-weight: 400;
+    font-size: 36px;
+    position: relative;
+    left: -10%;
+    top: 20%;
+}
+
+#banner.switch h3 {
+    font-size: 48px;
+    position: relative;
+    left: -15%;
+    top: 20%;
+}
+
+#banner p {
+    font-weight: 400;
+    font-size: 24px;
+    position: relative;
+    left: 22%;
+}
+
+#banner.switch p {
+    position: relative;
+    left: 35%;
 }
 
 main {
@@ -54,9 +246,15 @@ main {
 
 main section {
     width: 25%;
-    border: 1px rgb(235, 235, 235) dashed;
+    /* background: #A56E09; */
+    background: linear-gradient(180deg, #8D2F04 0%, #241605 100%);
     margin: 0 .25em;
     padding: 1em;
+}
+
+main section.switch {
+    background: linear-gradient(180deg, #AFE8F9 0%, #F1C7FF 100%);
+    border-radius: 20px;
 }
 
 a {
@@ -78,7 +276,8 @@ section a {
     line-height: 1.1em;
     display: inline-block;
     padding: .5em;
-    color: orange;
+    /* color: #4B1C02; */
+    color: white;
 }
 
 section a:hover {
@@ -87,12 +286,13 @@ section a:hover {
 }
 
 section.switch a {
-    color: #333;
+    color: #B654E4;
 }
 
 section.switch a:hover {
-    background-color: #333;
-    color: rgb(235, 235, 235);
+    background-color: #EDE7B1;
+    color: #F694C1;
+    border-radius: 5px;
 }
 
 button {
@@ -100,22 +300,12 @@ button {
     top: 20px;
     right: 20px;
     padding: 12px;
-    background-color: orange;
-    color: #333;
-    border: 1px solid transparent;
+    background-color: transparent;
+    border: none;
+
+    /* border: 1px solid transparent; */
 }
 
 button:hover {
-    background-color: coral;
     cursor: pointer;
-}
-
-button.switch {
-    background-color: rgb(235, 235, 235);
-    border-color: #333;
-}
-
-button.switch:hover {
-    background-color: #333;
-    color: rgb(235, 235, 235)
 }
