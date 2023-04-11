@@ -126,21 +126,20 @@ h3 {
         transform:rotate(45deg);
     }
     40%{
-
-        transform:(90deg);
+        transform: rotate(90deg);
     }
     60%{
         
-       transform:rotate(145deg); 
+       transform: rotate(145deg); 
     }
     80%{
     
-        transform:rotate(180deg);
+        transform: rotate(180deg);
     }
     100%{
         opacity:0.5;
         top:120%;
-        transform:(240deg);
+        transform: rotate(240deg);
     }
 }
 
