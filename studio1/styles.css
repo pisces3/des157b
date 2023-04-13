@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+section button {
+    display: block;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 72px;
+}
+
+section button:hover {
+    cursor: pointer;
+}
