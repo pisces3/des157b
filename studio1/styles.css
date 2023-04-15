@@ -3,7 +3,16 @@
     padding: 0;
 }
 
+body {
+    display: flex;
+}
+
 section {
+    padding-right: 50px;
+    width: 70%;
+}
+
+#controls {
     position: absolute;
     top: 20%;
     left: 20%;
@@ -12,10 +21,21 @@ section {
 section button {
     display: block;
     background-color: transparent;
-    padding: 10px;
     font-size: 72px;
+
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 section button:hover {
     cursor: pointer;
+}
+
+#fallVid {
+    height: auto;
+    max-width: 35%;
+}
+
+#video {
+    padding: 0;
 }

@@ -21,13 +21,25 @@
      <script src="script.js" defer></script>
 </head>
 <body>
-
     <section>
-        <button>fall</button>
-        <button>winter</button>
-        <button>spring</button>
-        <button>summer</button>
+        <section id="controls">
+            <button id="fall">fall</button>
+            <button id="winter">winter</button>
+            <button id="spring">spring</button>
+            <button id="summer">summer</button>
+        </section>
     </section>
+    
+
+    <video id="fallVid" poster="images/thumbnail.png" muted autoplay loop playsinline>
+        <source src="media/test.webm" type="video/webm" id="fall-webm">
+        <source src="media/test.mp4" type="video/mp4" id="fall-mp4">
+
+        <p>Your browser doesn't support HTML5 video.
+            Here is a <a href="media/test.mp4">link to the video</a> instead
+        </p>
+
+    </video>
     
 
     
