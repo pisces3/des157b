@@ -31,11 +31,15 @@ section button:hover {
     cursor: pointer;
 }
 
-#fallVid {
+video {
     height: auto;
     max-width: 35%;
 }
 
-#video {
-    padding: 0;
+.showing {
+    display: none;
+}
+
+.hidden {
+    display: block;
 }

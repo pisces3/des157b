@@ -8,19 +8,20 @@
     const springBtn = document.querySelector('#spring');
     const summerBtn = document.querySelector('#summer');
 
-    const fallVid = document.querySelector('#fallVid');
+    const test1 = document.querySelector('#fallVid');
+    const test2 = document.querySelector('#fallVid2');
 
     const body = document.querySelector('body');
 
     fallBtn.addEventListener('click', fallScene);
 
-    function fallScene() {
-        body.style.backgroundColor = 'brown';
-        //question: only replacing the webm. how should we replace both sources?
-        fallVid.src = 'media/test1.mp4'
-        fallVid.src = 'media/test1.webm';
-        fallVid.poster = 'images/thumbnail1.png'
-        console.log(fallVid.src);
 
+    function hideOthers() {
+        
+    }
+    function fallScene() {
+        body.style.background = 'linear-gradient(180deg, #170601 0%, rgba(47, 24, 12, 0.96) 47.4%, rgba(164, 58, 0, 0.4) 100%)';
+        test1.className = 'hidden';
+        test2.className = 'showing';
     }
 }());
