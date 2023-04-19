@@ -37,9 +37,18 @@ video {
 }
 
 .showing {
-    display: none;
+    display: block;
 }
 
 .hidden {
-    display: block;
+    display: none;
 }
+
+body.fall {
+    background: linear-gradient(180deg, #170601 0%, rgba(47, 24, 12, 0.96) 47.4%, rgba(164, 58, 0, 0.4) 100%);
+}
+
+#fall.fall {
+    font-family: 'Courier New', Courier, monospace;
+}
+

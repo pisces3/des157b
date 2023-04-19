@@ -8,20 +8,45 @@
     const springBtn = document.querySelector('#spring');
     const summerBtn = document.querySelector('#summer');
 
-    const test1 = document.querySelector('#fallVid');
-    const test2 = document.querySelector('#fallVid2');
+    const fallVid = document.querySelector('#fallVid');
+    const winterVid = document.querySelector('#winterVid');
+    const springVid = document.querySelector('#springVid');
+    const summerVid = document.querySelector('#summerVid');
 
     const body = document.querySelector('body');
 
     fallBtn.addEventListener('click', fallScene);
+    winterBtn.addEventListener('click', winterScene);
+    springBtn.addEventListener('click', springScene);
+    summerBtn.addEventListener('click', summerScene);
 
 
     function hideOthers() {
-        
+        fallVid.className = 'hidden';
+        winterVid.className = 'hidden';
+        springVid.className = 'hidden';
+        summerVid.className = 'hidden'
     }
+
     function fallScene() {
-        body.style.background = 'linear-gradient(180deg, #170601 0%, rgba(47, 24, 12, 0.96) 47.4%, rgba(164, 58, 0, 0.4) 100%)';
-        test1.className = 'hidden';
-        test2.className = 'showing';
+        hideOthers();
+        fallVid.className = 'showing';
+        body.className = 'fall';
+        fallBtn.className = 'fall';
+    }
+
+    function winterScene() {
+        hideOthers();
+        winterVid.className = 'showing';
+    }
+
+    function springScene() {
+        hideOthers();
+        springVid.className = 'showing';
+    }
+
+    function summerScene() {
+        hideOthers();
+        summerVid.className = 'showing';
     }
 }());
