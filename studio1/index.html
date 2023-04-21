@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=IM+Fell+DW+Pica:ital@0;1&family=Meddon&family=Playfair+Display&family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
 
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
  
      <!-- stylesheet -->
      <link href="styles.css" rel="stylesheet" />
@@ -30,11 +33,11 @@
         </section>
     </section>
 
-    <section id="fallPoem">
-        <p id="fall1" class="hidden">ALL</p>
-        <p id="fall2" class="hidden">TOO</p>
-        <p id="fall3" class="hidden">WELL</p>
-        <p id="fall4" class="hidden">-Red (Taylor's Version)</p>
+    <div id="loader"><img src="images/loader.png" alt="loader"></div>
+
+    <section id="poem">
+        <p id="line1" class="showing">cruel summer</p>
+        <p id="line2" class="showing">-taylor swift</p>
     </section>
 
     <video id="fallVid" class="hidden" poster="images/thumbnail.png" muted autoplay loop playsinline>
@@ -45,8 +48,6 @@
             Here is a <a href="media/fall.mp4">link to the video</a> instead
         </p>
     </video>
-
-    
 
     <video id="winterVid" class="hidden" poster="images/thumbnail.png" muted autoplay loop playsinline>
         <source src="media/winter.webm" type="video/webm">

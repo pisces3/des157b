@@ -33,7 +33,7 @@ section button {
 section button:hover {
     cursor: pointer;
     transition: all 0.8s ease-in-out;
-    background: black;
+    /* background: black; */
 }
 
 
@@ -50,79 +50,93 @@ video {
     display: none;
 }
 
-/* Fall season */
-body.fall {
-    background: linear-gradient(180deg, #170601 0%, rgba(47, 24, 12, 0.96) 47.4%, rgba(164, 58, 0, 0.4) 100%);
-}
-
-#fall.fall{
-    font-family: 'Meddon', cursive;
-    background: linear-gradient(98.71deg, #230D01 0%, #913206 33.96%, #A75D07 68.5%, #A56E09 90.46%, #757657 109.68%);
-}
-
-#fallPoem p{
+#loader {
     position: absolute;
-    font-family: 'Playfair Display', serif;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    animation: season 2s infinite alternate ease-in-out;
+}
+
+@keyframes season {
+    0% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+        transform: scale(1.5);
+    }
+}
+
+#loader img {
+    height: auto;
+    width: 150%;
+}
+
+#poem p {
+    position: absolute;
     color: white;
+    transition: 500ms ease-in;
 }
 
-#fall1 {
-    font-size: 80px;
-    top: 10%;
-    left: 75%;
-}
-
-#fall2 {
-    font-size: 80px;
-    top: 25%;
-    left: 75%;
-}
-
-#fall3 {
-    font-size: 80px;
-    top: 40%;
-    left: 75%;
-}
-
-#fall4 {
-    font-size: 30px;
-    top: 70%;
+#line1 {
+    font-size: 45px;
+    top: 45%;
     left: 70%;
 }
 
+#line2 {
+    font-size: 45px;
+    left: 80%;
+    top: 55%;
+}
+
+/* Fall season */
+body.fall {
+    background: linear-gradient(98.71deg, #230D01 0%, #913206 33.96%, #A75D07 68.5%, #A56E09 90.46%, #757657 109.68%);
+}
+
+#fall.fall, #fall:hover{
+    font-family: 'Meddon', cursive;
+    background: #4d1606;
+}
 
 
 /* Winter Season */
 body.winter {
-    background: linear-gradient(180deg, #000000 0%, #233D4A 76.44%, #82A2AF 113.07%);
+    background: linear-gradient(98.8deg, #040123 0%, #4C7C93 54.65%, #82A2AF 81.78%, #A6BAD5 105.4%, #EDF2F8 122.1%);
 }
 
-#winter.winter {
+#winter.winter, #winter:hover {
     font-family: 'IM Fell DW Pica', serif;
     font-style: italic;
-    background: linear-gradient(98.8deg, #040123 0%, #4C7C93 54.65%, #82A2AF 81.78%, #A6BAD5 105.4%, #EDF2F8 122.1%);
+    background: #08202D;
 }
 
 
 /* Spring Season */
 body.spring {
-    background: linear-gradient(178.05deg, #FC8484 -4.41%, #FF8E3D 41.08%, #FFF7C2 98.4%);
+    background: linear-gradient(96.33deg, #FFED83 0%, #F8B581 30.74%, #FFC2AD 43.04%, #AFE8F9 65.74%, #DBE5B1 79.01%, #F1C7FF 97.31%);
 }
 
-#spring.spring {
+#spring.spring, #spring:hover {
     font-family: 'Berkshire Swash', cursive;
-    color: #B654E4;
-    background: linear-gradient(96.33deg, #FFED83 0%, #F8B581 30.74%, #FFC2AD 43.04%, #AFE8F9 65.74%, #DBE5B1 79.01%, #F1C7FF 97.31%);
+    /* color: #B654E4; */
+    background: #C489FF;
 }
 
 
 /* Summer Season */
 body.summer {
-    background: linear-gradient(170.65deg, #273C35 -21.75%, #4BB1DA 27.96%, #FFDC25 86.71%);
+    background: linear-gradient(90.93deg, #327B8B 0.25%, #418327 29.93%, rgba(87, 211, 240, 0.78) 71.4%, #FFFFFF 99.17%);
 }
 
-#summer.summer {
+#summer.summer, #summer:hover {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(90.93deg, #327B8B 0.25%, #418327 29.93%, rgba(87, 211, 240, 0.78) 71.4%, #FFFFFF 99.17%);
+    background: #49B8DA;
 }
 
