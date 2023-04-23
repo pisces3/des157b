@@ -84,6 +84,8 @@
         hideOthers();
         fallVid.className = 'showing';
         fallPoem(fallVid);
+        fallVid.play();
+        console.log(fallVid.currentTime)
         body.className = 'fall';
         fallBtn.className = 'fall';
     }
@@ -91,7 +93,7 @@
     function winterScene() {
         hideOthers();
         winterVid.className = 'showing';
-        // winterPoem()
+        winterPoem(winterVid);
         body.className = 'winter';
         winterBtn.className = 'winter';
     }
@@ -99,7 +101,7 @@
     function springScene() {
         hideOthers();
         springVid.className = 'showing';
-        // springPoem();
+        springPoem(springVid);
         body.className = 'spring';
         springBtn.className = 'spring';
     }
@@ -107,7 +109,7 @@
     function summerScene() {
         hideOthers();
         summerVid.className = 'showing';
-        // summerPoem();
+        summerPoem(summerVid);
         body.className = 'summer';
         summerBtn.className = 'summer';
     }
@@ -142,7 +144,7 @@
 
     //functions to change innerHTML based on season
     function fallPoem(video) {
-        const intervalID = setInterval(checkTime(video), 1000);
+        // const intervalID = setInterval(checkTime(video), 1000);
         poemText.style.fontFamily = 'Playfair Display';
         poem.line[0].innerHTML = 'all too well';
     }
