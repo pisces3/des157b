@@ -29,10 +29,11 @@
     const poemText = document.querySelector('#poem p');
     const line1 = document.querySelector('#line1');
     const line2 = document.querySelector('#line2');
+    const line3 = document.querySelector('#line3');
     const poem = {
-        start: [0, 5],
-        stop: [1, 3],
-        line: [line1, line2]
+        start: [0, 2, 4],
+        stop: [1, 3, 5],
+        line: [line1, line2, line3]
     }
 
     //Play everything
@@ -83,9 +84,13 @@
     function fallScene() {
         hideOthers();
         fallVid.className = 'showing';
+        // if (fallVid.paused) {
+        //     console.log('Video is paused');
+        // } else {
+        //     console.log('Video is playing');
+        // }
         fallPoem(fallVid);
-        fallVid.play();
-        console.log(fallVid.currentTime)
+        // console.log(fallVid.currentTime)
         body.className = 'fall';
         fallBtn.className = 'fall';
     }
@@ -129,11 +134,19 @@
         }
     }
 
-    function checkTime(video) {
-        console.log(parseInt(video.currentTime));
+    function checkTime(videoSeason) {
+        videoSeason.play();
+        if (videoSeason.paused) {
+            console.log('Video is paused');
+        } else {
+            console.log('Video is playing');
+        }
+        console.log(parseInt(videoSeason.currentTime));
         for (let i = 0; i < poem.start.length; i++) {
-            if (poem.start[i] < video.currentTime && video.currentTime < poem.stop[i]) {
-                console.log(parseInt(video.currentTime));
+            if (poem.start[i] < videoSeason.currentTime && videoSeason.currentTime < poem.stop[i]) {
+                console.log(`Starting second: ${poem.start[i]}`);
+                console.log(`Video current time: ${videoSeason.currentTime}`);
+                console.log(parseInt(videoSeason.currentTime));
                 poem.line[i].className = 'showing';
             }
             else {
@@ -144,9 +157,9 @@
 
     //functions to change innerHTML based on season
     function fallPoem(video) {
-        // const intervalID = setInterval(checkTime(video), 1000);
         poemText.style.fontFamily = 'Playfair Display';
         poem.line[0].innerHTML = 'all too well';
+        setInterval(checkTime(video), 1000);
     }
 
     function winterPoem() {
