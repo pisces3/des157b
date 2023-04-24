@@ -2,73 +2,41 @@
     "day1" : {
         "date": "April 16",
         "day": "Sunday",
-        "screen_time": "5h 32m",
-        "most-used": {
-            "app": "TikTok",
-            "app_time": "2h 54m"
-        }
+        "screen_time": "5h 32m"
     },
     "day2" : {
         "date": "April 17",
         "day": "Monday",
-        "screen_time": "3h 58m",
-        "most-used": {
-            "app": "TikTok",
-            "app_time": "1h 38m"
-        }
+        "screen_time": "3h 58m"
     },
     "day3" : {
         "date": "April 18",
         "day": "Tuesday",
-        "screen_time": "4h 10m",
-        "most-used": {
-            "app": "TikTok",
-            "app_time": "55m"
-        }
+        "screen_time": "4h 10m"
     },
     "day4" : {
         "date": "April 19",
         "day": "Wednesday",
-        "screen_time": "4h 33m",
-        "most-used": {
-            "app": "TikTok",
-            "app_time": "2h 17m"
-        }
+        "screen_time": "4h 33m"
     },
     "day5" : {
         "date": "April 20",
         "day": "Thursday",
-        "screen_time": "4h 54m",
-        "most-used": {
-            "app": "Instagram",
-            "app_time": "1h 9m"
-        }
+        "screen_time": "4h 54m"
     },
     "day6" : {
         "date": "April 21",
         "day": "Friday",
-        "screen_time": "6h 28m",
-        "most-used": {
-            "app": "TikTok",
-            "app_time": "2h 24m"
-        }
+        "screen_time": "6h 28m"
     },
     "day7" : {
         "date": "April 22",
         "day": "Saturday",
-        "screen_time": "6h 32m",
-        "most-used": {
-            "app": "TikTok",
-            "app_time": "5h 14m"
-        }
+        "screen_time": "6h 32m"
     },
     "day8" : {
         "date": "April 23",
         "day": "Sunday",
-        "screen_time": "5h 8m",
-        "most-used": {
-            "app": "TikTok",
-            "app_time": "3h 23m"
-        }
+        "screen_time": "5h 8m"
     }
 }

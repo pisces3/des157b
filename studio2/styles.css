@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 900px;
+    margin: 1em auto;
+    padding-top: 2em;
+}
+
+header {
+    text-align: center;
+    margin: auto;
+}
+
+h2 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 96px;
+    margin: 30px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+h3 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+}
+
