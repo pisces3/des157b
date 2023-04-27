@@ -21,8 +21,10 @@ h2 {
 }
 
 p {
-    width: 80%;
+    width: 65%;
     margin: auto;
+    line-height: 1.8em;
+    margin-bottom: 10px;
 }
 
 img {
