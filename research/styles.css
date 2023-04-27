@@ -38,3 +38,24 @@ img {
     display: flex;
     justify-content: center;
 }
+
+.comparative {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    gap: 20px;
+}
+
+.comparative p {
+   width: 100%;
+   margin: 0;
+}
+
+.comparative img {
+    margin: auto;
+    max-width: 50%;
+}
+
+.comparative a {
+    color: white;
+}
