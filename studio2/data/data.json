@@ -2,41 +2,65 @@
     "day1" : {
         "date": "April 16",
         "day": "Sunday",
-        "screen_time": "5h 32m"
+        "time_taken": "7:44pm",
+        "word": "sunset",
+        "wallpaper": "images/april-16.png",
+        "color": "#F4D6FF"
     },
     "day2" : {
         "date": "April 17",
         "day": "Monday",
-        "screen_time": "3h 58m"
+        "time_taken": "6:28pm",
+        "word": "study",
+        "wallpaper": "images/april-17.png",
+        "color": "#DBEEFF"
     },
     "day3" : {
         "date": "April 18",
         "day": "Tuesday",
-        "screen_time": "4h 10m"
+        "time_taken": "1:34pm",
+        "word": "sight",
+        "wallpaper": "images/april-18.png",
+        "color": "#FFDBDB"
     },
     "day4" : {
         "date": "April 19",
         "day": "Wednesday",
-        "screen_time": "4h 33m"
+        "time_taken": "5:46pm",
+        "word": "students",
+        "wallpaper": "images/april-19.png",
+        "color": "#EDFFDB"
     },
     "day5" : {
         "date": "April 20",
         "day": "Thursday",
-        "screen_time": "4h 54m"
+        "time_taken": "3:49pm",
+        "word": "studio",
+        "wallpaper": "images/april-20.png",
+        "color": "#FFCEEB"
     },
     "day6" : {
         "date": "April 21",
         "day": "Friday",
-        "screen_time": "6h 28m"
+        "time_taken": "12:35pm",
+        "word": "social",
+        "wallpaper": "images/april-21.png",
+        "color": "#FFCECE"
     },
     "day7" : {
         "date": "April 22",
         "day": "Saturday",
-        "screen_time": "6h 32m"
+        "time_taken": "6:43pm",
+        "word": "spicy",
+        "wallpaper": "images/april-22.png",
+        "color": "#FFF3AC"
     },
     "day8" : {
         "date": "April 23",
         "day": "Sunday",
-        "screen_time": "5h 8m"
+        "time_taken": "6:20pm",
+        "word": "soft serve",
+        "wallpaper": "images/april-23.png",
+        "color": "#ACFFE1"
     }
 }
