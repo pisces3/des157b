@@ -10,6 +10,17 @@
     const colorBG = document.querySelector('body');
     const wallpaper = document.querySelector('#wallpaper');
     const word = document.querySelector('#word');
+    const icon = document.querySelector('.fas.fa-info-circle');
+    const overlay = document.querySelector('#overlay');
+
+    icon.addEventListener('click', function(){
+        if (overlay.className == 'showing') {
+            overlay.className = 'hidden';
+        }
+        else if (overlay.className == 'hidden'){
+            overlay.className = 'showing';
+        }
+    });
 
     async function getData() {
         const timeTaken = await fetch('data/data.json');
@@ -50,6 +61,8 @@
             prevLoc = changeTime;
         }
     }
+
+   
 
     getData();
 }());
