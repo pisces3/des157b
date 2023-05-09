@@ -59,3 +59,28 @@ img {
 .comparative a {
     color: white;
 }
+
+#citation {
+    width: 65%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+
+    background: white;
+    color:  rgb(32, 18, 5);
+}
+
+.sources , .sources p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sources h2 {
+    width: 65%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    background: white;
+    color:  rgb(32, 18, 5);
+}
+
