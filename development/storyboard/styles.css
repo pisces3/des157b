@@ -34,25 +34,3 @@ img {
     padding: 5px;
     margin: auto;
 }
-
-li {
-    list-style: none;
-    padding: 20px;
-    background-color: white;
-    border-radius: 20px;
-
-    text-align: center;
-    max-width: 50%;
-    margin: auto;
-    margin-bottom:10px;
-}
-
-li:hover {
-    background-color: blanchedalmond;
-}
-
-li a {
-    text-decoration: none;
-    color: rgb(32, 18, 5);
-    font-size: 36px;
-}
