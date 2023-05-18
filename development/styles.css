@@ -56,3 +56,18 @@ li a {
     color: rgb(32, 18, 5);
     font-size: 36px;
 }
+
+
+.flows img {
+    max-width: 90%;
+}
+
+.flows h3 {
+    font-size: 36px;
+}
+
+.flows {
+    padding: 20px;
+    max-width: 80%;
+    margin:auto;
+}
