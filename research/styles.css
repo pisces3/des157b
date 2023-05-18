@@ -70,12 +70,12 @@ img {
     color:  rgb(32, 18, 5);
 }
 
-.sources , .sources p{
+.sources, .sources p, .plan{
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.sources h2 {
+.sources h2, .plan h2{
     width: 65%;
     margin: auto;
     padding: 10px;
@@ -84,6 +84,32 @@ img {
     color:  rgb(32, 18, 5);
 }
 
-#visual-research {
+#visual-research{
     max-width: 50%;
 }
+
+#plans {
+    max-width: 40%;
+}
+
+.plan li, .plan h3 {
+    width: 65%;
+    margin: auto;
+    line-height: 1.8em;
+}
+
+/* #report {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+} */
+
+/* .plan h2{
+    text-align: left;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    background: white;
+    color:  rgb(32, 18, 5);
+} */
