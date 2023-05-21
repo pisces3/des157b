@@ -60,11 +60,12 @@ img {
     color: white;
 }
 
-#citation {
+.list {
     width: 65%;
     margin: auto;
     padding: 30px;
     border-radius: 10px;
+    margin-top: 15px;
 
     background: white;
     color:  rgb(32, 18, 5);
@@ -97,19 +98,3 @@ img {
     margin: auto;
     line-height: 1.8em;
 }
-
-/* #report {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
-} */
-
-/* .plan h2{
-    text-align: left;
-    margin: auto;
-    padding: 10px;
-    border-radius: 5px;
-    background: white;
-    color:  rgb(32, 18, 5);
-} */
