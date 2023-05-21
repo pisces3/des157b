@@ -15,10 +15,16 @@ header {
     font-size: 42px;
 }
 
-h2 {
+section {
+    display: flex;
+    align-items: center;
+}
+
+h2, h3 {
     text-align: center;
     margin-top: 10px;
 }
+
 
 p {
     width: 65%;
@@ -57,16 +63,16 @@ li a {
     font-size: 36px;
 }
 
-
 .flows img {
     max-width: 90%;
 }
 
-.flows h3 {
+.flows h3, .sketch h3 {
     font-size: 36px;
+    text-align: center;
 }
 
-.flows {
+.flows, .sketch {
     padding: 20px;
     max-width: 80%;
     margin:auto;
